@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI FOR PRODUCT BUILDERS | Product Academy</title>
+    <link rel="icon" href="Product academy-favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Montserrat', 'sans-serif'] },
+                    colors: { primary: '#030e2a', accent: '#ff71f9', darker: '#02091d', grayish: '#8c9bb4' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #030e2a; color: #fff; scroll-behavior: smooth; }
+        .glow-text { text-shadow: 0 0 10px rgba(255, 113, 249, 0.7); }
+        .glow-btn { box-shadow: 0 0 15px rgba(255, 113, 249, 0.5); transition: all 0.3s ease; }
+        .glow-btn:hover { box-shadow: 0 0 25px rgba(255, 113, 249, 0.8); transform: translateY(-2px); }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 113, 249, 0.1); }
+        .glass-card:hover { border-color: rgba(255, 113, 249, 0.4); transform: translateY(-5px); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #030e2a; }
+        ::-webkit-scrollbar-thumb { background: rgba(255, 113, 249, 0.5); border-radius: 4px; }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-primary/80 backdrop-blur-md border-b border-accent/20">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#"><img src="logo-am-ban.png" alt="Logo" class="h-10" onerror="this.src='https://ui-avatars.com/api/?name=PA&background=030e2a&color=ff71f9'"></a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-accent">Về khóa học</a>
+                <a href="#audience" class="hover:text-accent">Đối tượng</a>
+                <a href="#register" class="text-accent">Đăng ký</a>
+            </nav>
+            <a href="#register" class="bg-accent text-primary px-6 py-2 rounded-full font-bold text-sm glow-btn hidden md:flex">ĐĂNG KÝ NGAY</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="about" class="pt-32 pb-20 md:pt-40 relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/20 rounded-full blur-[120px] -z-10"></div>
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-3/5 text-center lg:text-left">
+                <div class="inline-block border border-accent/50 text-accent px-4 py-1.5 rounded-full text-sm font-semibold mb-6 bg-accent/10">KHAI GIẢNG: 09/05/2026</div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">KHÓA HỌC<br><span class="text-accent glow-text">AI FOR PRODUCT BUILDERS</span></h1>
+                <h2 class="text-xl md:text-2xl text-gray-300 mb-6">Tư duy Product để <span class="text-white font-bold border-b-2 border-accent">xây đúng</span> - Ứng dụng AI để <span class="text-white font-bold border-b-2 border-accent">xây nhanh</span></h2>
+                <p class="text-grayish text-lg mb-8">Đừng chỉ build nhanh, hãy build đúng. Khóa học giúp bạn hiểu tư duy Product cốt lõi và biết cách dùng AI để đi từ Ý tưởng → Phạm vi MVP → Prototype/MVP cơ bản chỉ trong 3 tuần.</p>
+                <a href="#register" class="inline-block bg-accent text-primary px-8 py-4 rounded-full font-bold text-lg glow-btn">ĐĂNG KÝ TƯ VẤN NGAY</a>
+            </div>
+            <div class="lg:w-2/5 max-w-md">
+                <div class="glass-card rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">Thông tin cơ bản</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center text-xl">📅</div><div><p class="text-sm text-grayish">Khai giảng</p><p class="font-bold">09/05/2026</p></div></div>
+                        <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center text-xl">💻</div><div><p class="text-sm text-grayish">Hình thức</p><p class="font-bold">Online qua Zoom</p></div></div>
+                        <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center text-xl">⏰</div><div><p class="text-sm text-grayish">Thời lượng</p><p class="font-bold">03 tuần</p></div></div>
+                        <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center text-xl">🤖</div><div><p class="text-sm text-grayish">Công cụ AI</p><p class="font-bold">Antigravity, Stitch, Google AI Studio</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience -->
+    <section id="audience" class="py-20 bg-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">CHÂN DUNG <span class="text-accent">HỌC VIÊN</span></h2>
+            <p class="text-grayish text-center max-w-2xl mx-auto mb-12">Khóa học dành cho những người muốn ứng dụng AI để tối ưu hóa quy trình phát triển sản phẩm.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-card p-6 rounded-2xl"><h3 class="font-bold mb-2">Product Owner / PM</h3><p class="text-grayish text-sm">Hệ thống lại tư duy, công cụ và dùng AI tăng tốc quy trình.</p></div>
+                <div class="glass-card p-6 rounded-2xl"><h3 class="font-bold mb-2">BA, Marketing, UX</h3><p class="text-grayish text-sm">Chuyển đổi insight khách hàng thành logic cấu trúc sản phẩm.</p></div>
+                <div class="glass-card p-6 rounded-2xl"><h3 class="font-bold mb-2">Founder, Solopreneur</h3><p class="text-grayish text-sm">Dùng AI tạo sản phẩm nhanh hơn nhưng vẫn đúng hướng.</p></div>
+                <div class="glass-card p-6 rounded-2xl"><h3 class="font-bold mb-2">Kỹ sư, Tech Lead</h3><p class="text-grayish text-sm">Nâng cao tư duy sản phẩm, thấu hiểu người dùng.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 bg-[#020717]">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-4">CHÍNH SÁCH <span class="text-accent glow-text">HỌC PHÍ</span></h2>
+            <p class="text-grayish mb-10">Đầu tư một lần, trang bị bộ kỹ năng Product & AI đi cùng bạn suốt sự nghiệp.</p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="opacity-70"><p class="text-grayish mb-1">Học phí gốc</p><div class="text-3xl font-bold line-through decoration-red-500">6.000.000đ</div></div>
+                <div class="hidden md:block w-px h-20 bg-accent/20"></div>
+                <div class="text-center transform md:scale-110">
+                    <div class="inline-block bg-accent text-primary text-xs font-bold px-3 py-1 rounded-full mb-2 animate-pulse">ƯU ĐÃI EARLY BIRD</div>
+                    <div class="text-5xl font-black text-accent glow-text">4.500.000đ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Form - THAY BẰNG URL CỦA BẠN TỪ GOOGLE APPS SCRIPT -->
+    <section id="register" class="py-16 bg-darker">
+        <div class="container mx-auto px-6">
+            <div class="max-w-lg mx-auto">
+                <div class="bg-[#030e2a] rounded-2xl p-8 border border-pink-500 shadow-[0_0_30px_rgba(255,113,249,0.2)]">
+                    <h3 class="text-2xl font-bold text-center mb-6">ĐĂNG KÝ GIỮ CHỖ NGAY</h3>
+                    
+                    <!-- THAY BẰNG URL DEPLOYMENT CỦA BẠN TỪ GOOGLE APPS SCRIPT -->
+                    <form id="registerForm" class="space-y-4">
+                        <input type="text" name="name" required placeholder="Họ và tên" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-pink-500/30 text-white placeholder-gray-500 focus:outline-none focus:border-pink-500">
+                        <input type="tel" name="phone" required placeholder="Số điện thoại" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-pink-500/30 text-white placeholder-gray-500 focus:outline-none focus:border-pink-500">
+                        <input type="email" name="email" required placeholder="Email" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-pink-500/30 text-white placeholder-gray-500 focus:outline-none focus:border-pink-500">
+                        <button type="submit" class="w-full bg-pink-500 text-white py-3 rounded-lg font-bold text-lg hover:bg-pink-600 transition-colors">ĐĂNG KÝ GIỮ CHỖ NGAY</button>
+                    </form>
+                    <p class="text-xs text-gray-500 text-center mt-4">* Số lượng học viên giới hạn để đảm bảo chất lượng hướng dẫn 1-1.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary border-t border-accent/10 py-8 text-center">
+        <p class="text-grayish text-sm">© 2026 Product Academy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyAAGqsCZxwKiKzGJIF4xm5UdyAgjuspuXe3ClnvQzOGfP5jp63uNoSWe1HRgTMM6Zp/exec'; // Thay bằng URL của bạn
+        
+        const form = document.getElementById('registerForm');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            btn.innerHTML = '⏳ ĐANG GỬI...';
+            btn.disabled = true;
+            
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            
+            try {
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: JSON.stringify(data)
+                });
+                
+                btn.innerHTML = '✓ ĐÃ ĐĂNG KÝ THÀNH CÔNG!';
+                btn.classList.remove('bg-pink-500', 'hover:bg-pink-600');
+                btn.classList.add('bg-green-500');
+                form.reset();
+                
+            } catch (error) {
+                btn.innerHTML = '✗ GỬI THẤT BẠI';
+                btn.classList.remove('bg-pink-500');
+                btn.classList.add('bg-red-500');
+            }
+            
+            setTimeout(() => {
+                btn.innerHTML = 'ĐĂNG KÝ GIỮ CHỖ NGAY';
+                btn.disabled = false;
+                btn.classList.remove('bg-green-500', 'bg-red-500');
+                btn.classList.add('bg-pink-500', 'hover:bg-pink-600');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
