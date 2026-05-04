@@ -35,7 +35,10 @@ Mở file `index.html` trong trình duyệt để xem landing page.
 
 ```
 ├── index.html          # Landing page chính
-├── Demo.html           # File demo (trùng index.html)
+├── logo-am-ban.png     # Logo
+├── trainer-1.png      # Ảnh giảng viên 1
+├── trainer-2.png      # Ảnh giảng viên 2
+├── trainer-3.png      # Ảnh giảng viên 3
 ├── README.md           # File này
 └── .gitignore          # Git ignore file
 ```
@@ -44,6 +47,7 @@ Mở file `index.html` trong trình duyệt để xem landing page.
 
 - Email: contact@productacademy.vn
 - Website: https://productacademy.vn
+
 
 ---
 
